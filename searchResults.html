@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/output.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <title>Search Results</title>
+  </head>
+
+  <body class="h-screen overflow-hidden bg-white">
+    <div class="flex flex-col h-screen">
+      <header class="bg-white border-b border-stone-200 px-4 py-4 md:py-6 mb-6">
+        <nav
+          class="flex items-center justify-between lg:w-4/5 2xl:w-3/4 mx-auto"
+        >
+          <a
+            href=""
+            class="flex items-center space-x-3 rtl:space-x-reverse"
+          >
+            <i class="fa-solid fa-taxi text-kkgreen-500 text-3xl"></i>
+            <span class="self-center text-2xl font-semibold whitespace-nowrap"
+              >K&K Travel</span
+            >
+          </a>
+          <div>
+            <ul class="flex gap-8 items-center">
+              <li>Home</li>
+              <li>Signup</li>
+              <li
+                class="rounded-full bg-white text-slate-900 px-6 font-semibold py-2"
+              >
+                Login
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <main
+        class="flex-1 flex w-full overflow-y-auto text-slate-900 lg:w-4/5 2xl:w-3/4 mx-auto"
+      >
+        <div
+          class="grid grid-rows-[auto_1fr_auto] md:grid-cols-[1fr_2fr] lg:grid-cols-[1.75fr_3fr] gap-10 w-full p-4"
+        >
+          <div>
+            <h2 class="font-bold text-2xl mb-4">Ride details</h2>
+            <div
+              class="w-full rounded-lg border-2 bg-white gap-3 px-4 py-2 flex-col justify-between"
+            >
+              <div
+                class="flex md:flex-col lg:flex-row justify-between items-center lg:items-center md:items-start"
+              >
+                <p class="text-lg font-semibold">
+                  Gangtok <span>&RightArrow;</span> Siliguri
+                </p>
+                <p class="text-base font-medium">15 January 2024</p>
+              </div>
+              <div>
+                <p class="text-gray-600 text-sm">
+                  Reserved
+                  <span>&ThickSpace;<i class="fa-solid fa-user"></i></span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="overflow-y-auto">
+            <div class="font-bold text-2xl mb-4">Choose a cab</div>
+            <ul>
+              <li class="">
+                <input
+                  type="radio"
+                  id="cab1"
+                  name="cab-type"
+                  value="cab1"
+                  class="hidden peer"
+                  required
+                />
+                <label
+                  for="cab1"
+                  class="inline-flex items-center justify-between w-full p-3 bg-white border-2 border-transparent rounded-lg cursor-pointer peer-checked:border-kkgreen-950 peer-checked:border-2 hover:bg-gray-50 transition-all"
+                >
+                  <div class="flex gap-6 justify-between w-full items-center">
+                    <div class="flex gap-6">
+                      <img
+                        class="w-36"
+                        src="./images/innova.png"
+                      />
+
+                      <div class="flex flex-col justify-center">
+                        <p class="w-full text-xl font-bold">Toyota Innova</p>
+
+                        <p class="text-sm text-gray-500">4 hours</p>
+                        <p class="text-sm text-gray-500">Top rated driver</p>
+                      </div>
+                    </div>
+                    <div>
+                      <span class="font-bold text-2xl">₹ 3500</span>
+                    </div>
+                  </div>
+                </label>
+              </li>
+              <li class="">
+                <input
+                  type="radio"
+                  id="cab1"
+                  name="cab-type"
+                  value="cab1"
+                  class="hidden peer"
+                  required
+                />
+                <label
+                  for="cab1"
+                  class="inline-flex items-center justify-between w-full p-3 bg-white border-2 border-transparent rounded-lg cursor-pointer peer-checked:border-kkgreen-950 peer-checked:border-2 hover:bg-gray-50 transition-all"
+                >
+                  <div class="flex gap-6 justify-between w-full items-center">
+                    <div class="flex gap-6">
+                      <img
+                        class="w-36"
+                        src="./images/innova.png"
+                      />
+
+                      <div class="flex flex-col justify-center">
+                        <p class="w-full text-xl font-bold">Toyota Innova</p>
+
+                        <p class="text-sm text-gray-500">4 hours</p>
+                        <p class="text-sm text-gray-500">Top rated driver</p>
+                      </div>
+                    </div>
+                    <div>
+                      <span class="font-bold text-2xl">₹ 3500</span>
+                    </div>
+                  </div>
+                </label>
+              </li>
+              <li class="">
+                <input
+                  type="radio"
+                  id="cab1"
+                  name="cab-type"
+                  value="cab1"
+                  class="hidden peer"
+                  required
+                />
+                <label
+                  for="cab1"
+                  class="inline-flex items-center justify-between w-full p-3 bg-white border-2 border-transparent rounded-lg cursor-pointer peer-checked:border-kkgreen-950 peer-checked:border-2 hover:bg-gray-50 transition-all"
+                >
+                  <div class="flex gap-6 justify-between w-full items-center">
+                    <div class="flex gap-6">
+                      <img
+                        class="w-36"
+                        src="./images/innova.png"
+                      />
+
+                      <div class="flex flex-col justify-center">
+                        <p class="w-full text-xl font-bold">Toyota Innova</p>
+
+                        <p class="text-sm text-gray-500">4 hours</p>
+                        <p class="text-sm text-gray-500">Top rated driver</p>
+                      </div>
+                    </div>
+                    <div>
+                      <span class="font-bold text-2xl">₹ 3500</span>
+                    </div>
+                  </div>
+                </label>
+              </li>
+              <li class="">
+                <input
+                  type="radio"
+                  id="cab1"
+                  name="cab-type"
+                  value="cab1"
+                  class="hidden peer"
+                  required
+                />
+                <label
+                  for="cab1"
+                  class="inline-flex items-center justify-between w-full p-3 bg-white border-2 border-transparent rounded-lg cursor-pointer peer-checked:border-kkgreen-950 peer-checked:border-2 hover:bg-gray-50 transition-all"
+                >
+                  <div class="flex gap-6 justify-between w-full items-center">
+                    <div class="flex gap-6">
+                      <img
+                        class="w-36"
+                        src="./images/innova.png"
+                      />
+
+                      <div class="flex flex-col justify-center">
+                        <p class="w-full text-xl font-bold">Toyota Innova</p>
+
+                        <p class="text-sm text-gray-500">4 hours</p>
+                        <p class="text-sm text-gray-500">Top rated driver</p>
+                      </div>
+                    </div>
+                    <div>
+                      <span class="font-bold text-2xl">₹ 3500</span>
+                    </div>
+                  </div>
+                </label>
+              </li>
+            </ul>
+          </div>
+
+          <div class="md:col-start-2 md:pl-8 self-end">
+            <button
+              disabled
+              class="text-l mt-4 rounded-lg bg-kkgreen-500 px-6 py-2 font-bold text-slate-900 transition-all hover:bg-kkgreen-400 w-full h-14 disabled:opacity-75 disabled:cursor-not-allowed"
+            >
+              Proceed
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+
+  <script
+    src="https://kit.fontawesome.com/6ef5ec0870.js"
+    crossorigin="anonymous"
+  ></script>
+</html>

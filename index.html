@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/output.css"
+    />
+    <title>K&K Travel</title>
+  </head>
+
+  <body class="bg-gradient-to-r from-gray-950 to-slate-950 text-white">
+    <div class="h-screen grid grid-rows-[auto_1fr]">
+      <header
+        class="bg-gradient-to-r from-gray-950 to-slate-950 border-b border-gray-900 px-4 py-4 md:py-6 mb-6"
+      >
+        <nav class="flex items-center justify-between 2xl:w-3/4 mx-auto">
+          <a
+            href="https://flowbite.com/"
+            class="flex items-center space-x-3 rtl:space-x-reverse"
+          >
+            <i class="fa-solid fa-taxi text-kkgreen-500 text-3xl"></i>
+            <span
+              class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+              >K&K Travel</span
+            >
+          </a>
+          <div>
+            <ul class="flex gap-8 items-center">
+              <li>Home</li>
+              <li>Signup</li>
+              <li
+                class="rounded-full bg-white text-slate-900 px-6 font-semibold py-2"
+              >
+                Login
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <main class="flex px-6 2xl:w-3/4 mx-auto">
+        <div class="px-14 my-auto hidden lg:block">
+          <img
+            src="./images/Ride-with-Uber.webp"
+            alt=""
+            class="max-w-md object-contain"
+          />
+        </div>
+        <div class="my-auto">
+          <h1
+            class="font-bold text-4xl sm:text-5xl lg:text-6xl leading-tight mb-10"
+          >
+            Travel safely, comfortably and affordably anywhere
+          </h1>
+          <p class="text-base text-slate-200 mb-4">
+            Request a cab, get in, and go
+          </p>
+          <form
+            action="taxi-list.php"
+            method="post"
+          >
+            <div class="flex flex-col gap-4 text-stone-950">
+              <div class="relative">
+                <i
+                  class="fa-solid fa-circle text-slate-800 absolute top-1/2 -translate-y-1/2 translate-x-2/3"
+                ></i>
+                <input
+                  required
+                  type="text"
+                  placeholder="Enter pickup location"
+                  class="input"
+                />
+              </div>
+              <div class="relative">
+                <i
+                  class="fa-solid fa-square text-slate-800 absolute top-1/2 -translate-y-1/2 translate-x-2/3"
+                ></i>
+                <input
+                  required
+                  type="text"
+                  placeholder="Enter destination"
+                  class="input"
+                />
+              </div>
+              <div class="relative">
+                <i
+                  class="fa-solid fa-calendar text-slate-800 absolute text-sm top-1/2 -translate-y-1/2 translate-x-2/3"
+                ></i>
+                <input
+                  required
+                  type="text"
+                  placeholder="Travel date"
+                  onfocus="(this.type='date')"
+                  onblur="(this.type='text')"
+                  class="input"
+                />
+              </div>
+              <ul class="grid grid-cols-2 gap-6 w-full sm:w-2/3 lg:w-3/4">
+                <li>
+                  <input
+                    type="radio"
+                    id="shared"
+                    name="cab-type"
+                    value="shared"
+                    class="hidden peer"
+                    required
+                  />
+                  <label
+                    for="shared"
+                    class="inline-flex items-center justify-between w-full p-3 text-gray-300 bg-white border border-gray-200 rounded-lg cursor-pointer peer-checked:border-sky-500 peer-checked:text-sky-700 hover:text-sky-400 transition-all"
+                  >
+                    <div class="block">
+                      <div class="w-full text-md font-semibold">Shared</div>
+                      <div class="w-full text-sm">Affordable rides</div>
+                    </div>
+                    <i class="fa-solid fa-users text-3xl"></i>
+                  </label>
+                </li>
+                <li>
+                  <input
+                    type="radio"
+                    id="reserved"
+                    name="cab-type"
+                    value="reserved"
+                    class="hidden peer"
+                    required
+                  />
+                  <label
+                    for="reserved"
+                    class="inline-flex items-center justify-between w-full p-3 text-gray-300 bg-white border border-gray-200 rounded-lg cursor-pointer peer-checked:border-yellow-900 peer-checked:text-yellow-900 hover:text-yellow-700 transition-all"
+                  >
+                    <div class="block">
+                      <div class="w-full text-md font-semibold">Reserved</div>
+                      <div class="w-full text-sm">Comfortable rides</div>
+                    </div>
+                    <i class="fa-solid fa-user text-3xl"></i>
+                  </label>
+                </li>
+              </ul>
+              <button
+                type="submit"
+                class="rounded-lg bg-kkgreen-500 w:full sm:w-3/12 text-l font-semibold text-slate-900 px-1 py-3 mt-4 hover:bg-kkgreen-400 transition-all"
+              >
+                Search cabs
+              </button>
+            </div>
+          </form>
+        </div>
+      </main>
+    </div>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/6ef5ec0870.js"
+    crossorigin="anonymous"
+  ></script>
+</html>

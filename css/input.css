@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .input {
+    @apply rounded-md px-10 py-3 w-full sm:w-2/3 lg:w-3/4 tracking-wide placeholder:text-sm hover:ring-2 hover:ring-kkgreen-500 focus:ring-4 focus:ring-kkgreen-500 focus:outline-none transition-all;
+  }
+
+  .material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  }
+}
